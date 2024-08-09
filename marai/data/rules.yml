@@ -1,0 +1,8 @@
+version: "3.1"
+
+rules:
+
+- rule: Fallback rule
+  steps:
+  - intent: nlu_fallback
+  - action: action_default_fallback

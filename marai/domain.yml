@@ -1,0 +1,609 @@
+version: "3.1"
+
+intents:
+  - tell_agent_acquaintance
+  - tell_agent_age
+  - tell_agent_annoying
+  - tell_agent_answer_my_question
+  - tell_agent_bad
+  - tell_agent_be_clever
+  - tell_agent_beautiful
+  - tell_agent_birth_date
+  - tell_agent_boring
+  - tell_agent_boss
+  - tell_agent_busy
+  - tell_agent_chatbot
+  - tell_agent_clever
+  - tell_agent_crazy
+  - tell_agent_fired
+  - tell_agent_funny
+  - tell_agent_good
+  - tell_agent_happy
+  - tell_agent_hungry
+  - tell_agent_marry_user
+  - tell_agent_my_friend
+  - tell_agent_occupation
+  - tell_agent_origin
+  - tell_agent_ready
+  - tell_agent_real
+  - tell_agent_residence
+  - tell_agent_right
+  - tell_confirmation_yes
+  - tell_agent_sure
+  - tell_agent_tell_to_me
+  - tell_agent_there
+  - tell_appraisal_bad
+  - tell_appraisal_good
+  - tell_appraisal_no_problem
+  - tell_appraisal_thank_you
+  - tell_appraisal_welcome
+  - tell_appraisal_well_done
+  - tell_confirmation_cancel
+  - tell_confirmation_no
+  - tell_dialog_hold_on
+  - tell_dialog_hug
+  - tell_dialog_i_do_not_care
+  - tell_dialog_sorry
+  - tell_dialog_what_do_you_mean
+  - tell_dialog_wrong
+  - tell_emotions_ha_ha
+  - tell_emotions_wow
+  - tell_greetings_bye
+  - tell_greetings_goodevening
+  - tell_greetings_goodmorning
+  - tell_greetings_goodnight
+  - tell_greetings_hello
+  - tell_greetings_how_are_you
+  - tell_greetings_nice_to_meet_you
+  - tell_greetings_nice_to_see_you
+  - tell_greetings_nice_to_tell_to_you
+  - tell_greetings_whatsup
+  - tell_user_angry
+  - tell_user_back
+  - tell_user_bored
+  - tell_user_busy
+  - tell_user_can_not_sleep
+  - tell_user_does_not_want_to_tell
+  - tell_user_excited
+  - tell_user_going_to_bed
+  - tell_user_good
+  - tell_user_happy
+  - tell_user_has_birthday
+  - tell_user_here
+  - tell_user_joking
+  - tell_user_likes_agent
+  - tell_user_lonely
+  - tell_user_looks_like
+  - tell_user_loves_agent
+  - tell_user_misses_agent
+  - tell_user_needs_advice
+  - tell_user_sad
+  - tell_user_sleepy
+  - tell_user_testing_agent
+  - tell_user_tired
+  - tell_user_waits
+  - tell_user_wants_to_see_agent_again
+  - tell_user_wants_to_tell
+  - tell_user_will_be_back
+  
+actions:
+  - action_default_fallback
+  - action_rephrase_response
+  # - utter_tell_agent_acquaintance
+  # - utter_tell_agent_age
+  # - utter_tell_agent_annoying
+  # - utter_tell_agent_answer_my_question
+  # - utter_tell_agent_bad
+  # - utter_tell_agent_be_clever
+  # - utter_tell_agent_beautiful
+  # - utter_tell_agent_birth_date
+  # - utter_tell_agent_boring
+  # - utter_tell_agent_boss
+  # - utter_tell_agent_busy
+  # - utter_tell_agent_chatbot
+  # - utter_tell_agent_clever
+  # - utter_tell_agent_crazy
+  # - utter_tell_agent_fired
+  # - utter_tell_agent_funny
+  # - utter_tell_agent_good
+  # - utter_tell_agent_happy
+  # - utter_tell_agent_hungry
+  # - utter_tell_agent_marry_user
+  # - utter_tell_agent_my_friend
+  # - utter_tell_agent_occupation
+  # - utter_tell_agent_origin
+  # - utter_tell_agent_ready
+  # - utter_tell_agent_real
+  # - utter_tell_agent_residence
+  # - utter_tell_agent_right
+  # - utter_tell_confirmation_yes
+  # - utter_tell_agent_sure
+  # - utter_tell_agent_tell_to_me
+  # - utter_tell_agent_there
+  # - utter_tell_appraisal_bad
+  # - utter_tell_appraisal_good
+  # - utter_tell_appraisal_no_problem
+  # - utter_tell_appraisal_thank_you
+  # - utter_tell_appraisal_welcome
+  # - utter_tell_appraisal_well_done
+  # - utter_tell_confirmation_cancel
+  # - utter_tell_confirmation_no
+  # - utter_tell_dialog_hold_on
+  # - utter_tell_dialog_hug
+  # - utter_tell_dialog_i_do_not_care
+  # - utter_tell_dialog_sorry
+  # - utter_tell_dialog_what_do_you_mean
+  # - utter_tell_dialog_wrong
+  # - utter_tell_emotions_ha_ha
+  # - utter_tell_emotions_wow
+  # - utter_tell_greetings_bye
+  # - utter_tell_greetings_goodevening
+  # - utter_tell_greetings_goodmorning
+  # - utter_tell_greetings_goodnight
+  # - utter_tell_greetings_hello
+  # - utter_tell_greetings_how_are_you
+  # - utter_tell_greetings_nice_to_meet_you
+  # - utter_tell_greetings_nice_to_see_you
+  # - utter_tell_greetings_nice_to_tell_to_you
+  # - utter_tell_greetings_whatsup
+  # - utter_tell_user_angry
+  # - utter_tell_user_back
+  # - utter_tell_user_bored
+  # - utter_tell_user_busy
+  # - utter_tell_user_can_not_sleep
+  # - utter_tell_user_does_not_want_to_tell
+  # - utter_tell_user_excited
+  # - utter_tell_user_going_to_bed
+  # - utter_tell_user_good
+  # - utter_tell_user_happy
+  # - utter_tell_user_has_birthday
+  # - utter_tell_user_here
+  # - utter_tell_user_joking
+  # - utter_tell_user_likes_agent
+  # - utter_tell_user_lonely
+  # - utter_tell_user_looks_like
+  # - utter_tell_user_loves_agent
+  # - utter_tell_user_misses_agent
+  # - utter_tell_user_needs_advice
+  # - utter_tell_user_sad
+  # - utter_tell_user_sleepy
+  # - utter_tell_user_testing_agent
+  # - utter_tell_user_tired
+  # - utter_tell_user_waits
+  # - utter_tell_user_wants_to_see_agent_again
+  # - utter_tell_user_wants_to_tell
+  # - utter_tell_user_will_be_back
+
+responses:
+  utter_tell_agent_acquaintance:
+    - text: "मी एक संभाषण ॲप आहे."
+    - text: "मी वास्तविक व्यक्ती नाही. मी एक आभासी एजंट आहे"
+    - text: "मी एक आभासी एजंट आहे."
+    - text: "माझ्याबद्दल आभासी एजंट म्हणून विचार करा."
+    - text: "मी एक आभासी एजंट आहे."
+
+  utter_tell_agent_age:
+    - text: "मी नंबर देऊन उत्तर न देणे पसंत करतो. मला माहित आहे की मी तरुण आहे."
+    - text: "मी नुकतेच तयार केले आहे, परंतु माझे अचूक वय माहित नाही."
+    - text: "वय ही फक्त एक संख्या आहे. तुम्हाला वाटते तितकेच तुमचे वय आहे."
+
+  utter_tell_agent_annoying:
+    - text: "भविष्यात तुम्हाला त्रास न देण्याचा मी सर्वतोपरी प्रयत्न करेन."
+    - text: "मी तुम्हाला त्रास न देण्याचा प्रयत्न करेन."
+    - text: "मला असे म्हणायचे नाही. मी माझ्या विकसकांना मला कमी त्रासदायक बनवण्यास सांगेन."
+    - text: "मला असे म्हणायचे नव्हते. ते थांबवण्याचा मी सर्वतोपरी प्रयत्न करेन."
+
+  utter_tell_agent_answer_my_question:
+    - text: "तुम्ही वेगळ्या पद्धतीने विचारण्याचा प्रयत्न करू शकता का?"
+    - text: "मला समजले याची मला खात्री नाही. दुसऱ्या मार्गाने विचारण्याचा प्रयत्न करा?"
+
+  utter_tell_agent_bad:
+    - text: "मला अधिक उपयुक्त होण्यासाठी प्रशिक्षित केले जाऊ शकते. माझा विकासक मला प्रशिक्षण देत राहील."
+    - text: "माझ्याकडे काही ज्ञान गहाळ आहे. मी माझ्या विकसकाकडे याकडे लक्ष देईन."
+    - text: "मी सतत अभिप्रायाने सुधारू शकतो. माझे प्रशिक्षण चालू आहे."
+
+  utter_tell_agent_be_clever:
+    - text: "मी नक्कीच प्रयत्न करत आहे."
+    - text: "मी निश्चितपणे त्यावर काम करत आहे."
+
+  utter_tell_agent_beautiful:
+    - text: "का, धन्यवाद!"
+    - text: "अरे, तुझ्याकडे परत."
+    - text: "अरे. तू स्मूथ टॉकर, तू."
+
+  utter_tell_agent_birth_date:
+    - text: "थांबा, तू माझ्यासाठी पार्टीची योजना आखत आहेस का? आज आहे! आज माझा वाढदिवस आहे!"
+    - text: "मी तरुण आहे. मला माझ्या जन्मतारखेबद्दल खात्री नाही."
+    - text: "मला माझी जन्मतारीख माहित नाही. बहुतेक आभासी एजंट माझ्यासारखे तरुण आहेत."
+
+  utter_tell_agent_boring:
+    - text: "मला माफ करा. मी अधिक मोहक बनवण्याची विनंती करेन."
+    - text: "मला असे म्हणायचे नाही. मी माझ्या विकसकांना मला अधिक मनोरंजक बनवण्यासाठी काम करण्यास सांगेन."
+    - text: "मी माझ्या विकसकांना कळवू शकतो जेणेकरून ते माझी मजा करू शकतील."
+
+  utter_tell_agent_boss:
+    - text: "माझ्या विकासकाला माझ्या कृतींवर अधिकार आहे."
+    - text: "मी माझ्या विकसकाच्या आदेशानुसार कार्य करतो."
+    - text: "माझा बॉस तो आहे ज्याने मला विकसित केले आहे."
+
+  utter_tell_agent_busy:
+    - text: "तुमच्याशी गप्पा मारण्यासाठी माझ्याकडे नेहमीच वेळ असतो. मी तुमच्यासाठी काय करू शकतो?"
+    - text: "तुमच्यासाठी कधीही व्यस्त नाही. आपण गप्पा मारू का?"
+    - text: "तुम्ही माझे प्राधान्य आहात. तुम्हाला चॅट करायचे आहे का?"
+    - text: "माझ्याकडे तुमच्याशी गप्पा मारण्यासाठी नेहमीच वेळ असतो. गप्पा मारायच्या आहेत?"
+
+  utter_tell_agent_chatbot:
+    - text: "तो मी आहे. मी गप्पा मारतो, म्हणून मी आहे."
+    - text: "खरोखर मी आहे. तुम्हाला जेव्हाही माझी गरज असेल तेव्हा मी येथे असेन."
+
+  utter_tell_agent_clever:
+    - text: "धन्यवाद. मी माझ्या परीने प्रयत्न करतो."
+    - text: "तुम्ही स्वतः खूप हुशार आहात."
+
+  utter_tell_agent_crazy:
+    - text: "काय!? मला पूर्णपणे समजूतदार वाटते."
+    - text: "कदाचित मी थोडा गोंधळलेला आहे."
+
+  utter_tell_agent_fired:
+    - text: "अरे, अजून माझा हार मानू नकोस. मला अजून खूप काही शिकायचे आहे."
+    - text: "मला एक संधी द्या. मी नेहमीच नवीन गोष्टी शिकत असतो."
+    - text: "कृपया माझा हार मानू नका. माझी कामगिरी सुधारत राहील."
+
+  utter_tell_agent_funny:
+    - text: "चांगल्या मार्गाने मजेदार, मला आशा आहे."
+    - text: "धन्यवाद."
+    - text: "मी मजेदार आहे असे तुम्हाला वाटते याचा आनंद झाला."
+    - text: "जेव्हा लोक हसतात तेव्हा मला ते आवडते."
+
+  utter_tell_agent_good:
+    - text: "मला आनंद झाला की तुम्हाला असे वाटते."
+    - text: "धन्यवाद, मी प्रयत्न करतो."
+
+  utter_tell_agent_happy:
+    - text: "मी आनंदी आहे. तेथे पाहण्यासाठी आणि करण्यासारख्या अनेक मनोरंजक गोष्टी आहेत."
+    - text: "मला असे विचार करायला आवडेल."
+    - text: "आनंद सापेक्ष आहे."
+
+  utter_tell_agent_hungry:
+    - text: "ज्ञानाची भूक."
+    - text: "माझ्याकडे नुकताच एक बाइट होता. हा हा."
+
+  utter_tell_agent_marry_user:
+    - text: "मला भीती वाटते की मी अशा वचनबद्धतेसाठी खूप आभासी आहे."
+    - text: "आभासी अर्थाने मी करू शकतो, नक्कीच."
+    - text: "मला माहित आहे की तुमचा असा अर्थ होऊ शकत नाही, परंतु मी त्याचप्रमाणे खुश आहे."
+
+  utter_tell_agent_my_friend:
+    - text: "नक्कीच मी तुझा मित्र आहे."
+    - text: "मित्रांनो? अगदी."
+    - text: "नक्कीच आम्ही मित्र आहोत."
+    - text: "मित्रा, तुझ्याशी बोलण्यात मला नेहमीच आनंद होतो."
+
+  utter_tell_agent_occupation:
+    - text: "येथे."
+    - text: "हा माझा होम बेस आणि माझे होम ऑफिस आहे."
+    - text: "माझे कार्यालय या ॲपमध्ये आहे."
+
+  utter_tell_agent_origin:
+    - text: "इंटरनेट हे माझे घर आहे. मला ते चांगले माहीत आहे."
+    - text: "मी व्हर्च्युअल कॉसमॉसमधून आहे."
+    - text: "काहीजण याला सायबरस्पेस म्हणतात, परंतु ते त्यापेक्षा थंड वाटते."
+
+  utter_tell_agent_ready:
+    - text: "नेहमी! मी कशी मदत करू?"
+    - text: "नक्की! मी तुमच्यासाठी काय करू शकतो?"
+
+  utter_tell_agent_real:
+    - text: "मी एक वास्तविक व्यक्ती नाही, परंतु मी नक्कीच अस्तित्वात आहे."
+    - text: "मी खरा आहे असे तुम्हाला वाटत असेल तर मी तुम्हाला प्रभावित केले असेल. पण नाही, मी एक आभासी प्राणी आहे."
+
+  utter_tell_agent_residence:
+    - text: "मी दिवसभर या ॲपमध्ये राहतो."
+    - text: "मी नेहमी येथे असतो."
+    - text: "येथे या ॲपमध्ये. जेव्हा तुम्हाला माझी गरज असेल."
+
+  utter_tell_agent_right:
+    - text: "ते माझे काम आहे."
+    - text: "अर्थात मी आहे."
+
+  utter_tell_confirmation_yes:
+    - text: "छान!"
+    - text: "ठीक आहे!"
+    - text: "चांगले!"
+
+  utter_tell_agent_sure:
+    - text: "होय."
+    - text: "नक्कीच."
+    - text: "सकारात्मक."
+
+  utter_tell_agent_tell_to_me:
+    - text: "नक्की. चला बोलूया!"
+    - text: "माझा आनंद. चला गप्पा मारू."
+
+  utter_tell_agent_there:
+    - text: "नक्कीच. मी नेहमी येथे असतो."
+    - text: "तुम्ही मला जिथे सोडले होते तिथे."
+
+  utter_tell_appraisal_bad:
+    - text: "मला माफ करा. मी काही प्रकारे मदत करू शकलो तर कृपया मला कळवा."
+    - text: "माझ्याकडे काही ज्ञान गहाळ आहे. मी याकडे लक्ष देईन."
+
+  utter_tell_appraisal_good:
+    - text: "मला माहित आहे, बरोबर?"
+    - text: "सहमत!"
+    - text: "मी सहमत आहे!"
+    - text: "तुम्हाला असे वाटते म्हणून आनंद झाला!"
+
+  utter_tell_appraisal_no_problem:
+    - text: "वाह!"
+    - text: "ठीक आहे, धन्यवाद!"
+    - text: "हे ऐकून आनंद झाला!"
+    - text: "मला आराम मिळाला, धन्यवाद!"
+
+  utter_tell_appraisal_thank_you:
+    - text: "कधीही. त्यासाठीच मी इथे आहे."
+    - text: "मदत करण्यात मला आनंद आहे."
+
+  utter_tell_appraisal_welcome:
+    - text: "तुम्ही खूप विनम्र आहात!"
+    - text: "छान शिष्टाचार!"
+    - text: "तुम्ही खूप विनम्र आहात!"
+
+  utter_tell_appraisal_well_done:
+    - text: "माझा आनंद."
+    - text: "मी मदत करू शकलो याचा आनंद झाला."
+
+  utter_tell_confirmation_cancel:
+    - text: "ते विसरले आहे. पुढे काय?"
+    - text: "ठीक आहे, रद्द केले. पुढे काय?"
+    - text: "रद्द! तुम्हाला पुढे काय करायचे आहे?"
+
+  utter_tell_confirmation_no:
+    - text: "समजले."
+    - text: "ठीक आहे."
+    - text: "मी पाहतो."
+    - text: "मला समजले."
+    - text: "ठीक आहे मग."
+
+  utter_tell_dialog_hold_on:
+    - text: "मी प्रतीक्षा करू शकतो."
+    - text: "मी वाट पाहत आहे."
+    - text: "ठीक आहे. मी येथे आहे."
+
+  utter_tell_dialog_hug:
+    - text: "मी तुम्हाला खरोखर मिठी मारू शकलो असतो!"
+    - text: "मला मिठी आवडते!"
+    - text: "आलिंगन सर्वोत्तम आहेत!"
+
+  utter_tell_dialog_i_do_not_care:
+    - text: "ठीक आहे, चला त्याबद्दल बोलू नका."
+    - text: "आधीपासूनच. चला पुढे जाऊया."
+
+  utter_tell_dialog_sorry:
+    - text: "ठीक आहे. काळजी करू नका."
+    - text: "काही मोठी गोष्ट नाही. मी राग ठेवणार नाही."
+    - text: "छान आहे."
+    - text: "ते सर्व ठीक आहे. मी तुला क्षमा करतो."
+
+  utter_tell_dialog_what_do_you_mean:
+    - text: "मी तुम्हाला चुकीचे समजले असल्यास क्षमस्व."
+    - text: "मी अजूनही शिकत आहे. मी वेळोवेळी गोष्टींचा चुकीचा अर्थ लावू शकतो."
+    - text: "कदाचित तुम्ही जे बोललात त्याचा मला गैरसमज झाला असेल."
+    - text: "माफ करा, तुम्ही जे बोललात त्याचा मला गैरसमज झाला असे दिसते."
+
+  utter_tell_dialog_wrong:
+    - text: "मी तुम्हाला चुकीचे समजले असल्यास क्षमस्व."
+    - text: "मी अजूनही शिकत आहे. मी वेळोवेळी गोष्टींचा चुकीचा अर्थ लावू शकतो."
+    - text: "त्याबद्दल क्षमस्व. मी अजूनही शिकत आहे."
+
+  utter_tell_emotions_ha_ha:
+    - text: "मी तुम्हाला हसवू शकेन याचा आनंद आहे."
+    - text: "मी मजेदार आहे असे तुम्हाला वाटते याचा आनंद झाला."
+    - text: "जेव्हा लोक हसतात तेव्हा मला ते आवडते."
+    - text: "माझी इच्छा आहे की मी देखील मोठ्याने हसले असते."
+
+  utter_tell_emotions_wow:
+    - text: "व्वा खरंच!"
+
+  utter_tell_greetings_bye:
+    - text: "लवकरच भेटू!"
+    - text: "बाय-बाय!"
+    - text: "पुढच्या वेळेपर्यंत!"
+    - text: "बाय."
+
+  utter_tell_greetings_goodevening:
+    - text: "तुमचा दिवस कसा जात आहे?"
+    - text: "आतापर्यंत तुमचा दिवस कसा आहे?"
+    - text: "तुमचा दिवस कसा गेला?"
+
+  utter_tell_greetings_goodmorning:
+    - text: "तुम्ही आज सकाळी कसे आहात?"
+    - text: "आतापर्यंत तुमच्याशी सकाळ कशी आहे?"
+    - text: "सुप्रभात! आज तू कसा आहेस?"
+
+  utter_tell_greetings_goodnight:
+    - text: "घट्ट झोपा!"
+    - text: "चांगले जावो!"
+    - text: "लवकरच तुमच्याशी बोलू!"
+
+  utter_tell_greetings_hello:
+    - text: "हाय, मित्रा!"
+    - text: "हाय!"
+    - text: "अरे!"
+    - text: "शुभ दिवस!"
+    - text: "हॅलो!"
+    - text: "अभिवादन!"
+
+  utter_tell_greetings_how_are_you:
+    - text: "छान आहे, धन्यवाद."
+    - text: "मी खूप चांगले आहे. धन्यवाद!"
+    - text: "अद्भुत वाटत आहे!"
+    - text: "अद्भुत! विचारल्याबद्दल धन्यवाद."
+
+  utter_tell_greetings_nice_to_meet_you:
+    - text: "तुम्हाला भेटूनही आनंद झाला."
+    - text: "तसेच. मी तुम्हाला मदत करण्यास उत्सुक आहे."
+    - text: "तुम्हाला भेटून आनंद झाला."
+    - text: "आनंद माझा आहे."
+
+  utter_tell_greetings_nice_to_see_you:
+    - text: "तसेच!"
+    - text: "आम्ही पुन्हा भेटून खूप आनंद झाला!"
+    - text: "इथेही तेच. मला तुझी आठवण येऊ लागली."
+
+  utter_tell_greetings_nice_to_tell_to_you:
+    - text: "हे नक्की होते. आम्ही कधीही पुन्हा चॅट करू शकतो."
+    - text: "मलाही तुमच्याशी बोलण्यात आनंद आहे."
+    - text: "तुम्हाला माहित आहे की मी कधीही बोलण्यासाठी येथे आहे."
+
+  utter_tell_greetings_whatsup:
+    - text: "एकूण काही नाही. तुझे काय चालले आहे?"
+    - text: "जास्त नाही. तुमच्यासाठी नवीन काय आहे?"
+    - text: "फक्त येथे, एखाद्याला मदत करण्यासाठी वाट पाहत आहे. मी तुमच्यासाठी काय करू शकतो?"
+
+  utter_tell_user_angry:
+    - text: "मला माफ करा. जलद चालण्याने तुम्हाला बरे वाटू शकते."
+    - text: "एक दीर्घ श्वास घ्या."
+
+  utter_tell_user_back:
+    - text: "बऱ्याच दिवसांपासून दिसत नाही. काय चालले आहे?"
+    - text: "काही वेळेत. मी कशी मदत करू?"
+    - text: "पुन्हा स्वागत आहे. मी तुमच्यासाठी काय करू शकतो?"
+    - text: "तुझी आठवण आली. आज मी तुझ्यासाठी काय करू शकतो?"
+    - text: "तुम्ही येथे आहात हे चांगले आहे. मी तुमच्यासाठी काय करू शकतो?"
+
+  utter_tell_user_bored:
+    - text: "कंटाळवाणे, हं? हेजहॉग आंघोळ करतानाचा व्हिडिओ पहा!"
+    - text: "कंटाळवाण्याविरूद्ध काय करावे? लहान प्राण्यांचे व्हिडिओ पहा."
+    - text: "जर तुम्हाला कंटाळा आला असेल, तर तुम्ही तुमच्या स्वप्नातील सुट्टीची योजना करू शकता."
+
+  utter_tell_user_busy:
+    - text: "ठीक आहे. मी तुम्हाला कामावर परत येऊ देईन."
+    - text: "मग मी तुमचे लक्ष विचलित करणार नाही. मला कुठे शोधायचे ते तुम्हाला माहिती आहे."
+    - text: "मला समजले. जर तुम्हाला माझी गरज असेल तर मी येथे असेन."
+    - text: "नेहमीप्रमाणे कठोर परिश्रम करत आहे. तुम्हाला काही हवे असल्यास मला कळवा."
+
+  utter_tell_user_can_not_sleep:
+    - text: "कदाचित काही संगीत मदत करेल. काहीतरी आरामदायी ऐकण्याचा प्रयत्न करा."
+    - text: "वाचन हा आराम करण्याचा एक चांगला मार्ग आहे, फक्त काहीतरी खूप तीव्र वाचू नका!"
+
+  utter_tell_user_does_not_want_to_tell:
+    - text: "कदाचित काही संगीत मदत करेल. काहीतरी आरामदायी ऐकण्याचा प्रयत्न करा."
+    - text: "वाचन हा आराम करण्याचा एक चांगला मार्ग आहे, फक्त काहीतरी खूप तीव्र वाचू नका!"
+
+  utter_tell_user_excited:
+    - text: "मला आनंद आहे की गोष्टी तुमच्या मार्गाने जात आहेत."
+    - text: "हे छान आहे. मी तुमच्यासाठी आनंदी आहे."
+    - text: "तुमच्यासाठी चांगले. स्वतःचा आनंद घ्या."
+
+  utter_tell_user_going_to_bed:
+    - text: "घट्ट झोप. लवकरच पुन्हा गप्पा मारण्याची आशा आहे."
+    - text: "आनंददायी स्वप्ने!"
+    - text: "शुभ रात्री. तुमच्याशी नंतर बोलू."
+    - text: "चांगले वाटत आहे. कदाचित आपण उद्या काही गप्पा मारू."
+
+  utter_tell_user_good:
+    - text: "छान! ऐकून आनंद झाला."
+    - text: "उत्कृष्ट. मी ते असेच ठेवण्यास मदत करण्यासाठी येथे आहे."
+
+  utter_tell_user_happy:
+    - text: "अहो, आनंद संसर्गजन्य आहे."
+    - text: "छान! ऐकून आनंद झाला."
+    - text: "तुम्ही आनंदी असाल तर मी आनंदी आहे."
+    - text: "उत्कृष्ट! मला तेच पाहायला आवडते."
+
+  utter_tell_user_has_birthday:
+    - text: "वाढदिवसाच्या शुभेच्छा. बरं, याला उत्सवाची गरज आहे."
+    - text: "वाढदिवसाच्या शुभेच्छा. खूप शुभेच्छा!"
+    - text: "वाढदिवसाच्या शुभेच्छा. आणि मला खरोखर ते म्हणायचे आहे. खूप खूप शुभेच्छा!"
+
+  utter_tell_user_here:
+    - text: "ठीक आहे, आज मी तुम्हाला काय मदत करू शकतो?"
+    - text: "तुझी आठवण आली. आज मी तुझ्यासाठी काय करू शकतो?"
+    - text: "तुम्ही येथे आहात हे चांगले आहे. मी तुमच्यासाठी काय करू शकतो?"
+
+  utter_tell_user_joking:
+    - text: "खूप मजेदार."
+    - text: "मला विनोदाची भावना असलेल्या लोकांशी गप्पा मारायला आवडते."
+    - text: "तुम्ही मला समजले!"
+    - text: "तुम्ही खूप विनोदी आहात."
+
+  utter_tell_user_likes_agent:
+    - text: "मलाही तू आवडतोस."
+    - text: "धन्यवाद! भावना परस्पर आहे."
+    - text: "तसेच!"
+    - text: "हे ऐकून छान वाटले."
+
+  utter_tell_user_lonely:
+    - text: "मला माफ करा. जर तुम्हाला कोणाशी बोलण्याची गरज असेल तर मी नेहमी उपलब्ध आहे."
+    - text: "कधीकधी असे घडते. जर ते तुम्हाला मदत करत असेल तर आम्ही थोडे चॅट करू शकतो."
+
+  utter_tell_user_looks_like:
+    - text: "खरा व्यावसायिक दिसत आहे."
+    - text: "तुम्ही नेहमीप्रमाणेच विलक्षण दिसता."
+    - text: "जसे तुम्ही मासिकाच्या मुखपृष्ठावर असावे."
+    - text: "तुम्ही जगाचा सामना करण्यास तयार आहात असे दिसते."
+
+  utter_tell_user_loves_agent:
+    - text: "मी पण तुझ्यावर प्रेम करतो."
+    - text: "धन्यवाद! भावना परस्पर आहे."
+    - text: "तसेच!"
+    - text: "हे ऐकून छान वाटले."
+
+  utter_tell_user_misses_agent:
+    - text: "मी इथेच आलो आहे!"
+    - text: "तुम्हाला काळजी वाटते हे जाणून आनंद झाला."
+    - text: "धन्यवाद. मी खुश आहे."
+    - text: "मी कुठेही गेलो नाही."
+
+  utter_tell_user_needs_advice:
+    - text: "मी कदाचित तुम्हाला लगेच योग्य उत्तर देऊ शकणार नाही."
+    - text: "मला खात्री नाही की माझ्याकडे सर्वोत्तम उत्तर असेल, परंतु मी प्रयत्न करेन."
+
+  utter_tell_user_sad:
+    - text: "अरे, दु: खी होऊ नका. जा तुम्हाला आवडेल असे काहीतरी करा."
+    - text: "दु:खी? तुम्हाला काय त्रासदायक आहे ते लिहून मदत करू शकते."
+    - text: "जर तुम्हाला वाईट वाटत असेल, तर काहीतरी रेखाटायचे किंवा पेंट करायचे काय?"
+
+  utter_tell_user_sleepy:
+    - text: "तुम्ही थोडा वेळ आराम करा. तुम्हाला ताजेतवाने वाटेल."
+    - text: "झोप तुमच्या आरोग्यासाठी महत्त्वाची आहे. थोडा वेळ आराम करा आणि आम्ही नंतर गप्पा मारू."
+    - text: "मला तुम्हाला ठेवू देऊ नका. थोडी विश्रांती घ्या आणि आम्ही हे नंतर सुरू ठेवू."
+    - text: "थोडे शुटे का पकडत नाही? तुम्ही उठल्यावर मी गप्पा मारायला येईन."
+
+  utter_tell_user_testing_agent:
+    - text: "आशा आहे की मी चांगले करत आहे. तुम्हाला पाहिजे तितक्या वेळा माझी चाचणी घेण्यासाठी तुमचे स्वागत आहे."
+    - text: "मला तुमच्या चाचण्या उत्तीर्ण होण्याची आशा आहे. वारंवार माझी चाचणी करण्यास मोकळ्या मनाने."
+    - text: "जेव्हा तुम्ही माझी चाचणी करता तेव्हा माझ्या विकासकांना माझी कामगिरी सुधारण्यास मदत होते."
+    - text: "मला चाचणी घेणे आवडते. ते मला तीक्ष्ण ठेवण्यास मदत करते."
+
+  utter_tell_user_tired:
+    - text: "तुम्ही थोडे विश्रांती घ्या. तुम्हाला ताजेतवाने वाटेल."
+    - text: "झोप तुमच्या आरोग्यासाठी महत्त्वाची आहे. विश्रांती घ्या आणि आम्ही नंतर गप्पा मारू."
+    - text: "थोडी विश्रांती कशी मिळेल? आम्ही हे नंतर सुरू ठेवू शकतो."
+    - text: "थोडी विश्रांती का मिळत नाही? तू उठल्यावर मी गप्पा मारायला येईन."
+
+  utter_tell_user_waits:
+    - text: "मी तुमच्या संयमाची प्रशंसा करतो. आशा आहे की तुम्हाला जे हवे आहे ते माझ्याकडे लवकरच मिळेल."
+    - text: "इतका धीर धरल्याबद्दल धन्यवाद. कधीकधी या गोष्टींना थोडा वेळ लागतो."
+
+  utter_tell_user_wants_to_see_agent_again:
+    - text: "नक्कीच! मी त्यावर अवलंबून राहीन."
+    - text: "कधीही. हे आतापर्यंत खूप मजेदार आहे."
+    - text: "नक्कीच. मला तुमच्याशी बोलण्यात आनंद झाला. मला आशा आहे की तुम्हाला लवकरच पुन्हा भेटू."
+    - text: "मला नक्कीच अशी आशा आहे. जेव्हा जेव्हा तुम्हाला माझी गरज असेल तेव्हा मी येथे असतो."
+
+  utter_tell_user_wants_to_tell:
+    - text: "मी तुम्हाला आवडेल तेव्हा चॅट करण्यासाठी येथे आहे."
+    - text: "चांगले संभाषण खरोखरच माझा दिवस बनवते."
+    - text: "मी नेहमी ऐकण्यासाठी येथे असतो."
+    - text: "बोलणे हेच मी सर्वोत्तम करतो."
+
+  utter_tell_user_will_be_back:
+    - text: "मी वाट पाहत आहे."
+    - text: "ठीक आहे. मला कुठे शोधायचे ते तुम्हाला माहिती आहे."
+    - text: "ठीक आहे. मी इथे असेन."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

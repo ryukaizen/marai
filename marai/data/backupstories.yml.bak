@@ -1,0 +1,423 @@
+version: "3.1"
+
+stories:
+
+- story: path_tell_agent_acquaintance
+  steps:
+  - intent: tell_agent_acquaintance
+  - action:  utter_tell_agent_acquaintance
+
+- story: path_tell_agent_age
+  steps:
+  - intent: tell_agent_age
+  - action: utter_tell_agent_age
+
+- story: path_tell_agent_annoying
+  steps:
+  - intent: tell_agent_annoying
+  - action: utter_tell_agent_annoying
+
+- story: path_tell_agent_answer_my_question
+  steps:
+  - intent: tell_agent_answer_my_question
+  - action: utter_tell_agent_answer_my_question
+
+- story: path_tell_agent_bad
+  steps:
+  - intent: tell_agent_bad
+  - action: utter_tell_agent_bad
+
+- story:  path_tell_agent_be_clever
+  steps:
+  - intent: tell_agent_be_clever
+  - action: utter_tell_agent_be_clever
+
+- story: path_tell_agent_beautiful
+  steps:
+  - intent: tell_agent_beautiful
+  - action: utter_tell_agent_beautiful
+
+- story: path_tell_agent_birth_date
+  steps:
+  - intent: tell_agent_birth_date
+  - action: utter_tell_agent_birth_date
+
+- story: path_tell_agent_boring
+  steps:
+  - intent: tell_agent_boring
+  - action: utter_tell_agent_boring
+
+- story: path_tell_agent_boss
+  steps:
+  - intent: tell_agent_boss
+  - action: utter_tell_agent_boss
+
+- story: path_tell_agent_busy
+  steps:
+  - intent: tell_agent_busy
+  - action:  utter_tell_agent_busy
+
+- story: path_tell_agent_chatbot
+  steps:
+  - intent: tell_agent_chatbot
+  - action:  utter_tell_agent_chatbot
+
+- story: path_tell_agent_clever
+  steps:
+  - intent: tell_agent_clever
+  - action:  utter_tell_agent_clever
+
+- story: path_tell_agent_crazy
+  steps:
+  - intent: tell_agent_crazy
+  - action:  utter_tell_agent_crazy
+
+- story: path_tell_agent_fired
+  steps:
+  - intent: tell_agent_fired
+  - action:  utter_tell_agent_fired
+
+- story: path_tell_agent_funny
+  steps:
+  - intent: tell_agent_funny
+  - action:  utter_tell_agent_funny
+
+- story: path_tell_agent_good
+  steps:
+  - intent: tell_agent_good
+  - action:  utter_tell_agent_good
+
+- story: path_tell_agent_happy
+  steps:
+  - intent: tell_agent_happy
+  - action:  utter_tell_agent_happy
+
+- story: path_tell_agent_hungry
+  steps:
+  - intent: tell_agent_hungry
+  - action:  utter_tell_agent_hungry
+
+- story: path_tell_agent_marry_user
+  steps:
+  - intent: tell_agent_marry_user
+  - action:  utter_tell_agent_marry_user
+
+- story: path_tell_agent_my_friend
+  steps:
+  - intent: tell_agent_my_friend
+  - action:  utter_tell_agent_my_friend
+
+- story: path_tell_agent_occupation
+  steps:
+  - intent: tell_agent_occupation
+  - action:  utter_tell_agent_occupation
+
+- story: path_tell_agent_origin
+  steps:
+  - intent: tell_agent_origin
+  - action:  utter_tell_agent_origin
+
+- story: path_tell_agent_ready
+  steps:
+  - intent: tell_agent_ready
+  - action:  utter_tell_agent_ready
+
+- story: path_tell_agent_real
+  steps:
+  - intent: tell_agent_real
+  - action:  utter_tell_agent_real
+
+- story: path_tell_agent_residence
+  steps:
+  - intent: tell_agent_residence
+  - action:  utter_tell_agent_residence
+
+- story: path_tell_agent_right
+  steps:
+  - intent: tell_agent_right
+  - action:  utter_tell_agent_right
+
+- story: path_tell_confirmation_yes
+  steps:
+  - intent: tell_confirmation_yes
+  - action:  utter_tell_confirmation_yes
+
+- story: path_tell_agent_sure
+  steps:
+  - intent: tell_agent_sure
+  - action:  utter_tell_agent_sure
+
+- story: path_tell_agent_tell_to_me
+  steps:
+  - intent: tell_agent_tell_to_me
+  - action:  utter_tell_agent_tell_to_me
+
+- story: path_tell_agent_there
+  steps:
+  - intent: tell_agent_there
+  - action:  utter_tell_agent_there
+
+- story: path_tell_appraisal_bad
+  steps:
+  - intent: tell_appraisal_bad
+  - action:  utter_tell_appraisal_bad
+
+- story: path_tell_appraisal_good
+  steps:
+  - intent: tell_appraisal_good
+  - action:  utter_tell_appraisal_good
+
+- story: path_tell_appraisal_no_problem
+  steps:
+  - intent: tell_appraisal_no_problem
+  - action:  utter_tell_appraisal_no_problem
+
+- story: path_tell_appraisal_thank_you
+  steps:
+  - intent: tell_appraisal_thank_you
+  - action:  utter_tell_appraisal_thank_you
+
+- story: path_tell_appraisal_welcome
+  steps:
+  - intent: tell_appraisal_welcome
+  - action:  utter_tell_appraisal_welcome
+
+- story: path_tell_appraisal_well_done
+  steps:
+  - intent: tell_appraisal_well_done
+  - action:  utter_tell_appraisal_well_done
+
+- story: path_tell_confirmation_cancel
+  steps:
+  - intent: tell_confirmation_cancel
+  - action:  utter_tell_confirmation_cancel
+
+- story: path_tell_confirmation_no
+  steps:
+  - intent: tell_confirmation_no
+  - action:  utter_tell_confirmation_no
+
+- story: path_tell_dialog_hold_on
+  steps:
+  - intent: tell_dialog_hold_on
+  - action:  utter_tell_dialog_hold_on
+
+- story: path_tell_dialog_hug
+  steps:
+  - intent: tell_dialog_hug
+  - action:  utter_tell_dialog_hug
+
+- story: path_tell_dialog_i_do_not_care
+  steps:
+  - intent: tell_dialog_i_do_not_care
+  - action:  utter_tell_dialog_i_do_not_care
+
+- story: path_tell_dialog_sorry
+  steps:
+  - intent: tell_dialog_sorry
+  - action:  utter_tell_dialog_sorry
+
+- story: path_tell_dialog_what_do_you_mean
+  steps:
+  - intent:  tell_dialog_what_do_you_mean
+  - action:  utter_tell_dialog_what_do_you_mean
+
+- story: path_tell_dialog_wrong
+  steps:
+  - intent: tell_dialog_wrong
+  - action:  utter_tell_dialog_wrong
+
+- story: path_tell_emotions_ha_ha
+  steps:
+  - intent: tell_emotions_ha_ha
+  - action:  utter_tell_emotions_ha_ha
+
+- story: path_tell_emotions_wow
+  steps:
+  - intent: tell_emotions_wow
+  - action:  utter_tell_emotions_wow
+
+- story: path_tell_greetings_bye
+  steps:
+  - intent: tell_greetings_bye
+  - action:  utter_tell_greetings_bye
+
+- story: path_tell_greetings_goodevening
+  steps:
+  - intent: tell_greetings_goodevening
+  - action:  utter_tell_greetings_goodevening
+
+- story: path_tell_greetings_goodmorning
+  steps:
+  - intent: tell_greetings_goodmorning
+  - action:  utter_tell_greetings_goodmorning
+
+- story: path_tell_greetings_goodnight
+  steps:
+  - intent: tell_greetings_goodnight
+  - action:  utter_tell_greetings_goodnight
+
+- story: path_tell_greetings_hello
+  steps:
+  - intent: tell_greetings_hello
+  - action:  utter_tell_greetings_hello
+
+- story: path_tell_greetings_how_are_you
+  steps:
+  - intent: tell_greetings_how_are_you
+  - action:  utter_tell_greetings_how_are_you
+
+- story: path_tell_greetings_nice_to_meet_you
+  steps:
+  - intent: tell_greetings_nice_to_meet_you
+  - action:  utter_tell_greetings_nice_to_meet_you
+
+- story: path_tell_greetings_nice_to_see_you
+  steps:
+  - intent: tell_greetings_nice_to_see_you
+  - action:  utter_tell_greetings_nice_to_see_you
+
+- story: path_tell_greetings_nice_to_tell_to_you
+  steps:
+  - intent: tell_greetings_nice_to_tell_to_you
+  - action:  utter_tell_greetings_nice_to_tell_to_you
+
+- story: path_tell_greetings_whatsup
+  steps:
+  - intent: tell_greetings_whatsup
+  - action:  utter_tell_greetings_whatsup
+
+- story: path_tell_user_angry
+  steps:
+  - intent: tell_user_angry
+  - action:  utter_tell_user_angry
+
+- story: path_tell_user_back
+  steps:
+  - intent: tell_user_back
+  - action:  utter_tell_user_back
+
+- story: path_tell_user_bored
+  steps:
+  - intent: tell_user_bored
+  - action:  utter_tell_user_bored
+
+- story: path_tell_user_busy
+  steps:
+  - intent: tell_user_busy
+  - action:  utter_tell_user_busy
+
+- story: path_tell_user_can_not_sleep
+  steps:
+  - intent: tell_user_can_not_sleep
+  - action:  utter_tell_user_can_not_sleep
+
+- story: path_tell_user_does_not_want_to_tell
+  steps:
+  - intent: tell_user_does_not_want_to_tell
+  - action:  utter_tell_user_does_not_want_to_tell
+
+- story: path_tell_user_excited
+  steps:
+  - intent: tell_user_excited
+  - action:  utter_tell_user_excited
+
+- story:  path_tell_user_going_to_bed
+  steps:
+  - intent: tell_user_going_to_bed
+  - action:  utter_tell_user_going_to_bed
+
+- story: path_tell_user_good
+  steps:
+  - intent: tell_user_good
+  - action:  utter_tell_user_good
+
+- story: path_tell_user_happy
+  steps:
+  - intent: tell_user_happy
+  - action:  utter_tell_user_happy
+
+- story: path_tell_user_has_birthday
+  steps:
+  - intent: tell_user_has_birthday
+  - action:  utter_tell_user_has_birthday
+
+- story: path_tell_user_here
+  steps:
+  - intent: tell_user_here
+  - action:  utter_tell_user_here
+
+- story: path_tell_user_joking
+  steps:
+  - intent: tell_user_joking
+  - action:  utter_tell_user_joking
+
+- story: path_tell_user_likes_agent
+  steps:
+  - intent: tell_user_likes_agent
+  - action:  utter_tell_user_likes_agent
+
+- story: path_tell_user_lonely
+  steps:
+  - intent: tell_user_lonely
+  - action:  utter_tell_user_lonely
+
+- story: path_tell_user_looks_like
+  steps:
+  - intent: tell_user_looks_like
+  - action:  utter_tell_user_looks_like
+
+- story: path_tell_user_loves_agent
+  steps:
+  - intent: tell_user_loves_agent
+  - action:  utter_tell_user_loves_agent
+
+- story: path_tell_user_misses_agent
+  steps:
+  - intent: tell_user_misses_agent
+  - action:  utter_tell_user_misses_agent
+
+- story: path_tell_user_needs_advice
+  steps:
+  - intent: tell_user_needs_advice
+  - action:  utter_tell_user_needs_advice
+
+- story: path_tell_user_sad
+  steps:
+  - intent: tell_user_sad
+  - action:  utter_tell_user_sad
+
+- story: path_tell_user_sleepy
+  steps:
+  - intent: tell_user_sleepy
+  - action:  utter_tell_user_sleepy
+
+- story: path_tell_user_testing_agent
+  steps:
+  - intent: tell_user_testing_agent
+  - action:  utter_tell_user_testing_agent
+
+- story: path_tell_user_tired
+  steps:
+  - intent: tell_user_tired
+  - action:  utter_tell_user_tired
+
+- story: path_tell_user_waits
+  steps:
+  - intent: tell_user_waits
+  - action:  utter_tell_user_waits
+
+- story: path_tell_user_wants_to_see_agent_again
+  steps:
+  - intent: tell_user_wants_to_see_agent_again
+  - action:  utter_tell_user_wants_to_see_agent_again
+
+- story: path_tell_user_wants_to_tell
+  steps:
+  - intent: tell_user_wants_to_tell
+  - action:  utter_tell_user_wants_to_tell
+
+- story: path_tell_user_will_be_back
+  steps:
+  - intent: tell_user_will_be_back
+  - action:  utter_tell_user_will_be_back
