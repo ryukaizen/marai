@@ -1,0 +1,37 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - rasa-server
+    networks:
+      - rasa-network
+
+  rasa-server:
+    build:
+      context: ./marai
+      dockerfile: Dockerfile.rasa
+    ports:
+      - "5005:5005"
+    command: ["rasa", "run", "--enable-api", "--cors", "*"]
+    depends_on:
+      - rasa-actions
+    networks:
+      - rasa-network
+
+  rasa-actions:
+    build:
+      context: ./marai
+      dockerfile: Dockerfile.actions
+    ports:
+      - "5055:5055"
+    command: ["rasa", "run", "actions"]
+    networks:
+      - rasa-network
+
+networks:
+  rasa-network:
+    driver: bridge

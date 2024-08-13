@@ -1,0 +1,35 @@
+FROM python:3.9-slim
+
+WORKDIR /app
+
+COPY actions/requirements.txt .
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc \
+    build-essential \
+    python3-dev \
+    pkg-config \
+    libhdf5-dev \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN pip install --upgrade pip setuptools==68.0.0
+
+RUN pip install rasa
+
+RUN pip install --no-cache-dir -r requirements.txt || \
+    { pip install --no-cache-dir numpy; \
+      pip install --no-cache-dir scipy; \
+      pip install --no-cache-dir matplotlib; \
+      pip install --no-cache-dir pandas; \
+      pip install --no-cache-dir fastprogress; \
+      pip install --no-cache-dir numexpr; \
+      pip install --no-cache-dir nvidia-ml-py3==7.352.0; }
+
+RUN python3 -c "from transformers import AutoTokenizer, AutoModelForSeq2SeqLM; AutoTokenizer.from_pretrained('ai4bharat/MultiIndicParaphraseGeneration', do_lower_case=False, use_fast=False, keep_accents=True); AutoModelForSeq2SeqLM.from_pretrained('ai4bharat/MultiIndicParaphraseGeneration')"
+
+COPY ./actions /app/actions
+
+EXPOSE 5055
+
+CMD ["rasa", "run", "actions", "--port", "5055"]

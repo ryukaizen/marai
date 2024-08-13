@@ -1,0 +1,24 @@
+FROM python:3.10-slim
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc \
+    build-essential \
+    python3-dev \
+    pkg-config \
+    libhdf5-dev \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN pip install --upgrade pip
+RUN pip install rasa
+
+COPY . .
+
+# (Optional) Train the Rasa model
+# RUN rasa train
+
+EXPOSE 5005
+
+CMD ["rasa", "run", "--enable-api", "--cors", "*", "--port", "5005"]
