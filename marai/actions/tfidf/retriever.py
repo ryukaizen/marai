@@ -1,8 +1,6 @@
 import os
 import re
 import requests
-import string
-import numpy as np
 
 from inltk.inltk import setup, tokenize, remove_foreign_languages
 from .marathi_stopwords import marathi_stopwords
@@ -11,7 +9,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from fuzzywuzzy import fuzz
 from googlesearch import search
-from lxml import html
 
 setup('mr')
 
@@ -142,7 +139,7 @@ def chatbot_query(query, index=0):
     fallback = 'माफ करा, मला या प्रश्नाचे उत्तर सापडले नाही.'
     
     search_query = f"{query} site:mr.wikipedia.org"
-    search_results = list(search(search_query, tld="co.in", num=10, stop=3, pause=1))
+    search_results = list(search(search_query, num_results=10))
     
     if not search_results:
         return None
