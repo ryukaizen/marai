@@ -3,7 +3,7 @@
 <div align="center">
   <img src="https://i.imgur.com/Xb37sNN.jpeg" alt="MarAI"/>
 
-  ![License](https://img.shields.io/github/license/ryukaizen/marai)
+  ![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-red.svg)
   [![Rasa](https://img.shields.io/badge/Rasa-3.x-purple)](https://rasa.com/)
   [![React](https://img.shields.io/badge/React-17.x-cyan)](https://reactjs.org/)
   ![Python](https://img.shields.io/badge/python-3.10-green)
